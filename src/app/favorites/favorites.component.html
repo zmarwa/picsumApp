@@ -1,0 +1,15 @@
+<ul class="photos">
+  <li *ngFor="let photo of photos">
+    <div class="item row">
+      <div class="col-md-4">
+      <img src="https://picsum.photos/id/0/500/250.jpg" style="width: 100%;height: auto;">
+    </div>
+    <div class="col-md-8">
+        <b>{{photo.author}}</b><span id="boot-icon" class="bi bi-bookmark" style="font-size: 1rem; color: rgb(84, 84, 84);padding-left: 12px;"></span>
+        <p>{{photo.description}}</p>
+        <button type="button" class="btn btn-warning" (click)="remove(photo)"> Remove from favorite</button>
+    </div>
+      
+    </div>
+  </li>
+</ul>
